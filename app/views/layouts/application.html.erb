@@ -2,11 +2,21 @@
 <html>
 <head>
   <title>Trafficapi</title>
+  <%= stylesheet_link_tag "reset", media: "all" %>
+   <%= stylesheet_link_tag "styles", media: "all" %>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <%= javascript_include_tag "jquery.js" %>
+  <%= javascript_include_tag "slider.js" %>
+  <%= javascript_include_tag "superfish.js" %>
+  <%= javascript_include_tag "custom.js" %>
+
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<%= render 'layouts/nav_bar' %>
 
 <%= yield %>
 
